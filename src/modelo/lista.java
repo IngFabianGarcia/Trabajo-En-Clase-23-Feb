@@ -30,6 +30,7 @@ public void ListarNodos(){
     while(Auxiliar!=null){
         System.out.println(Auxiliar.getDato());
         Auxiliar = Auxiliar.siguiente;
+        
     }
 }
 }
