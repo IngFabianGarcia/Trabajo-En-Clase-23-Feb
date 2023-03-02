@@ -1,18 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package modelo;
 
-/**
- *
- * @author umg
- */
+
 public class lista {
   Nodo  Primero;
 
-public void InsertarNodo(int dato){
+public void InsertarNodo(String dato){
     Nodo nodoNuevo = new Nodo(dato);
     if(Primero == null){
         Primero = nodoNuevo;

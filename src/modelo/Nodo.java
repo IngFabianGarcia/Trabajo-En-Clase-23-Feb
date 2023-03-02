@@ -10,19 +10,19 @@ package modelo;
  * @author umg
  */
 public class Nodo {
-    private int dato;
+    private String dato;
     public Nodo siguiente;
 
-    public Nodo(int dato) {
+    public Nodo(String dato) {
         this.dato = dato;
         this.siguiente= null;
     }
 
-    public int getDato() {
+    public String getDato() {
         return dato;
     }
 
-    public void setDato(int dato) {
+    public void setDato(String dato) {
         this.dato = dato;
     }
 
@@ -32,8 +32,12 @@ public class Nodo {
 
     public void setSiguiente(Nodo siguiente) {
         this.siguiente = siguiente;
-    }
+    } 
 
+    @Override
+    public String toString() {
+        return "Nodo{" + "dato=" + dato + ", siguiente=" + siguiente + '}';
+    }
     
     
     
